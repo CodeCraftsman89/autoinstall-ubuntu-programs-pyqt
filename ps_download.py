@@ -7,9 +7,10 @@ url = 'https://storage.yandexcloud.net/pioneer-doc.geoscan.ru-static/dwnlds/soft
 response = requests.get(url)
 
 # Save the file
-with open('PioneerStationLinux.zip', 'wb') as file:
-    file.write(response.content)
+def ps_download():
+    with open('PioneerStationLinux.zip', 'wb') as file:
+        file.write(response.content)
 
-# Extract the zip file
-with zipfile.ZipFile('PioneerStationLinux.zip', 'r') as zip_ref:
-    zip_ref.extractall()
+    # Extract the zip file
+    with zipfile.ZipFile('PioneerStationLinux.zip', 'r') as zip_ref:
+        zip_ref.extractall()
