@@ -1,0 +1,6 @@
+ru.linux_gaming.PortProton
+it.mijorus.gearlever
+org.onlyoffice.desktopeditors
+org.gnome.Snapshot
+com.github.tchx84.Flatseal
+flathub com.vscodium.codium
