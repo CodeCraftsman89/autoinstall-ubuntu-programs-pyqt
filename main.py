@@ -1,7 +1,5 @@
 import subprocess
 
-from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout
-
 from flathub import install_flathub_programs, remove_flathub_programs
 from repo import install_programs, remove_programs
 from snap import install_snap_programs, remove_snap_programs
@@ -63,15 +61,3 @@ all_snap_programs = read_file(files[2])
             break
         else:
             print('Invalid choice')'''
-
-app = QApplication([])
-window = QWidget()
-layout = QVBoxLayout()
-
-window.setLayout(layout)
-window.resize(500, 500)
-window.setWindowTitle("Autoinstall Ubuntu Programs")
-
-if __name__ == '__main__':
-    window.show()
-    app.exec()
